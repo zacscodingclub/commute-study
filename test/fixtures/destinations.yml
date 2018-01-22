@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  commuter: one
+  text: MyString
+  lat: 1.5
+  lng: 1.5
+  type: 
+  mode: 
+
+two:
+  commuter: two
+  text: MyString
+  lat: 1.5
+  lng: 1.5
+  type: 
+  mode: 
