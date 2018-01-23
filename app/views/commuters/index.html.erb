@@ -1,24 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Commuters</h1>
+<h1>All Commuters</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @commuters.each do |commuter| %>
-      <tr>
-        <td><%= link_to 'Show', commuter %></td>
-        <td><%= link_to 'Edit', edit_commuter_path(commuter) %></td>
-        <td><%= link_to 'Destroy', commuter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= react_component("MapContainer", { homes: @homes, destinations: @destinations }) %>
 
 <br>
 

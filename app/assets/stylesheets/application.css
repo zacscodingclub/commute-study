@@ -13,3 +13,109 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ccc;
+}
+
+nav {
+  padding-right: 30px;
+  background: white;
+}
+
+#logo {
+  position: absolute;
+  right: 45px;
+  margin: 0;
+  padding-left: 40px;
+  height: auto;
+  width: 150px;
+}
+
+main {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 75%;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  width: 100%;
+  height: 75px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 15px;
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  font-weight: bold;
+  color: #6b0914;
+  padding: 30px 15px;
+}
+
+li a:hover {
+  color: #b82233;
+  background-color: #ccc;
+}
+
+.form-input label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 300px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+::placeholder {
+  padding-left: 15px;
+}
+
+#confirm-button {
+  background-color: #e3bc00;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+@media all and (max-width: 800px) {
+  #logo {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    height: auto;
+    width: 75px;
+  }
+}
+
+#destination-container {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#destination-form {
+  width: 50%;
+}
+
+#destination-list {
+  width: 50%;
+}
