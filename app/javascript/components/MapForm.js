@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Map, { GoogleApiWrapper, Marker } from "google-maps-react";
+import HomeIcon from "images/home_icon.png";
 
 class MapForm extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class MapForm extends React.Component {
           title={`Your Home at `}
           name={"Home"}
           position={home.coordinates}
-          icon={"/assets/home_icon.png"}
+          icon={HomeIcon}
         />
       );
     }

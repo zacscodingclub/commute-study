@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Map, { GoogleApiWrapper, Marker } from "google-maps-react";
+import HomeIcon from "images/home_icon.png";
 
 class MapContainer extends React.Component {
   buildHomeMarkers() {
@@ -13,7 +14,7 @@ class MapContainer extends React.Component {
           title={pt.address}
           name={`Home ${i}`}
           position={coordinates}
-          icon={"/assets/home_icon.png"}
+          icon={HomeIcon}
           key={i}
         />
       );
